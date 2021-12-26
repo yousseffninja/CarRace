@@ -278,9 +278,12 @@ public class SingleM1EasyCarListener extends AnimListener {
             double end = java.time.LocalTime.now().getSecond();
             JOptionPane.showMessageDialog(null, "GameOver.\nScore: " + (end - now), "GameOver",
                     JOptionPane.WARNING_MESSAGE);
+//            MainMenu m = new MainMenu();
+//            SEM1 s1 = new SEM1();
+//            s1.setVisible(false);
+//            m.setVisible(true);
             System.exit(0);
         }
-        //
     }
 
     public int generateX(int x){

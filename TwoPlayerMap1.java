@@ -102,10 +102,11 @@ public class TwoPlayerMap1 extends JFrame implements ActionListener {
         jPanel1.add(back);
         back.setBounds(30, 623, 80, 30);
 
-//        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("BackGround.jpeg")));
-        jLabel2.setText("Put background here");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(0, 0, 900, 900);
+        getContentPane().add(jPanel1);
+        background.setHorizontalAlignment(SwingConstants.CENTER);
+        background.setIcon(new ImageIcon(getClass().getResource("BackGround.jpeg")));
+        jPanel1.add(background);
+        background.setBounds(0, 0, 900, 900);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 900, 900);

@@ -259,6 +259,7 @@ public class MultiM1EasyCarListener extends AnimListener {
             double end = java.time.LocalTime.now().getSecond();
             JOptionPane.showMessageDialog(null, "Player 1 won. \n Score: " + (end - now) , "Player 1 won",
                     JOptionPane.WARNING_MESSAGE);
+
             System.exit(0);
         }
         //
