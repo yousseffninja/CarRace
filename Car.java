@@ -59,55 +59,7 @@ public class Car extends JFrame implements KeyListener {
         SingleM3HardCarListener listener = new SingleM3HardCarListener();
         glcanvas = new GLCanvas();
         new SingleM1EasyCarListener();
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            
-                    new SingleM1EasyCarListener();
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagMediumButton == true){
-            glcanvas.addGLEventListener(LSM1);            
-            glcanvas.addKeyListener(LSM1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagHardButton == true){
-            glcanvas.addGLEventListener(LSH1);            
-            glcanvas.addKeyListener(LSH1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            glcanvas.addGLEventListener(LSE1);            
-            glcanvas.addKeyListener(LSE1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            glcanvas.addGLEventListener(LSE1);            
-            glcanvas.addKeyListener(LSE1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            glcanvas.addGLEventListener(LSE1);            
-            glcanvas.addKeyListener(LSE1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            glcanvas.addGLEventListener(LSE1);            
-            glcanvas.addKeyListener(LSE1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            glcanvas.addGLEventListener(LSE1);            
-            glcanvas.addKeyListener(LSE1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            glcanvas.addGLEventListener(LSE1);            
-            glcanvas.addKeyListener(LSE1);
-        }
-        
-        if(menu.flagOnePlayerButton == true && maps.flagMapOneButton == true && levels.flagEasyButton == true){
-            glcanvas.addGLEventListener(LSE1);            
-            glcanvas.addKeyListener(LSE1);
-        }
+
 //        AnimListener listener = new SingleM3MediumCarListener();
 //        glcanvas = new GLCanvas();
 //        glcanvas.addGLEventListener(listener);

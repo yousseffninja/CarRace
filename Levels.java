@@ -120,35 +120,9 @@ public class Levels extends JFrame implements ActionListener {
         Levels levels = new Levels();
         System.out.println(flagOnePlayerButton);
 
-        if (menu.flagOnePlayerButton && maps.flagMapOneButton && flagEasyButton) {
-            setVisible(false);
-            new SEM1();
-        }
 
-//        if (menu.onePlayer.isFocusable()  == true && maps.mapTwo.isFocusable()  == true && levels.easy.isFocusable()  == true) {
-//            setVisible(false);
-//            new SEM2();
-//        }
 
-        if (menu.onePlayer.getModel().isEnabled()&& maps.mapThree.getModel().isEnabled() && levels.easy.getModel().isEnabled()) {
-            setVisible(false);
-            new SEM3();
-        }
-
-        if (menu.twoPlayers.getModel().isEnabled() && maps.mapOne.getModel().isEnabled() && levels.easy.getModel().isEnabled()) {
-            setVisible(false);
-            new MEM1();
-        }
-
-        if (menu.twoPlayers.getModel().isEnabled()  && maps.mapTwo.getModel().isEnabled()&& levels.easy.getModel().isEnabled()) {
-            setVisible(false);
-            new MEM2();
-        }
-
-        if (menu.twoPlayers.getModel().isEnabled() && maps.mapThree.getModel().isEnabled() && levels.easy.getModel().isEnabled()) {
-            setVisible(false);
-            new MEM3();
-        }
+//
     }
 
     private void mediumActionPerformed(ActionEvent evt) {
@@ -159,40 +133,7 @@ public class Levels extends JFrame implements ActionListener {
         Maps maps = new Maps();
         Levels levels = new Levels();
 
-        if (menu.onePlayer.isEnabled() == true && maps.mapOne.isEnabled() == true && levels.medium.isEnabled() == true) {
-            setVisible(false);
-            new SMM1();
-        }
 
-        if (menu.onePlayer.isEnabled() == true && maps.mapTwo.isEnabled() == true && levels.medium.isEnabled() == true) {
-            setVisible(false);
-            new SMM2();
-        }
-
-        if (menu.onePlayer.isEnabled() == true && maps.mapThree.isEnabled() == true && levels.medium.isEnabled() == true) {
-            setVisible(false);
-            new SEM3();
-        }
-
-        if (menu.onePlayer.isEnabled() == true && maps.mapThree.isEnabled() == true && levels.medium.isEnabled() == true) {
-            setVisible(false);
-            new SEM2();
-        }
-
-        if (menu.twoPlayers.isEnabled() == true && maps.mapOne.isEnabled() == true && levels.medium.isEnabled() == true) {
-            setVisible(false);
-            new MMM1();
-        }
-
-        if (menu.twoPlayers.isEnabled() == true && maps.mapTwo.isEnabled() == true && levels.medium.isEnabled() == true) {
-            setVisible(false);
-            new MMM2();
-        }
-
-        if (menu.twoPlayers.isEnabled() == true && maps.mapThree.isEnabled() == true && levels.medium.isEnabled() == true) {
-            setVisible(false);
-            new MMM3();
-        }
     }
 
     private void hardActionPerformed(ActionEvent evt) {
@@ -202,35 +143,6 @@ public class Levels extends JFrame implements ActionListener {
         Maps maps = new Maps();
         Levels levels = new Levels();
 
-        if (menu.onePlayer.isEnabled() == true && maps.mapOne.isEnabled() == true && levels.hard.isEnabled() == true) {
-            setVisible(false);
-            new SHM1();
-        }
-
-        if (menu.onePlayer.isEnabled() == true && maps.mapTwo.isEnabled() == true && levels.hard.isEnabled() == true) {
-            setVisible(false);
-            new SHM2();
-        }
-
-        if (menu.onePlayer.isEnabled() == true && maps.mapThree.isEnabled() == true && levels.hard.isEnabled() == true) {
-            setVisible(false);
-            new SHM3();
-        }
-
-        if (menu.twoPlayers.isEnabled() == true && maps.mapOne.isEnabled() == true && levels.hard.isEnabled() == true) {
-            setVisible(false);
-            new MHM1();
-        }
-
-        if (menu.twoPlayers.isEnabled() == true && maps.mapTwo.isEnabled() == true && levels.hard.isEnabled() == true) {
-            setVisible(false);
-            new MHM2();
-        }
-
-        if (menu.twoPlayers.isEnabled() == true && maps.mapThree.isEnabled() == true && levels.hard.isEnabled() == true) {
-            setVisible(false);
-            new MHM3();
-        }
     }
 
     private void backAction(ActionEvent evt) {

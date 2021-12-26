@@ -3,8 +3,15 @@ package CarRace;
 import com.sun.opengl.util.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.FileInputStream;
 import javax.media.opengl.*;
+import javax.print.attribute.standard.Media;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
 import javax.swing.*;
+
 
 /**
  *
@@ -23,14 +30,12 @@ public class MainMenu extends JFrame implements ActionListener {
 
     public boolean flag = false;
 
-    boolean flagOnePlayerButton;
-    boolean flagOnePlayerButton1;
-    public boolean flagTwoPlayersButton = false;
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
         new MainMenu();
     }
 
@@ -38,24 +43,18 @@ public class MainMenu extends JFrame implements ActionListener {
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         initComponents();
         setSize(900, 900);
+        try {
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(new File("Music/11-=-feed the addiction.wav").getAbsoluteFile());
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            clip.start();
+            } catch(Exception ex) {
+            System.out.println("Error with playing sound.");
+            ex.printStackTrace();
+            }
+
         setVisible(true);
         setLocationRelativeTo(null);
-    }
-
-    public JButton getTwoPlayers() {
-        return twoPlayers;
-    }
-
-    public void setTwoPlayers(JButton twoPlayers) {
-        this.twoPlayers = twoPlayers;
-    }
-
-    public JButton getOnePlayer() {
-        return onePlayer;
-    }
-
-    public void setOnePlayer(JButton onePlayer) {
-        this.onePlayer = onePlayer;
     }
 
     private void initComponents() {
@@ -70,9 +69,6 @@ public class MainMenu extends JFrame implements ActionListener {
         gameName = new JLabel();
         background = new JLabel();
 
-        flagOnePlayerButton = false;
-        flagTwoPlayersButton = false;
-        
         jPanel1.setBackground(new Color(255, 255, 255));
         jPanel1.setLayout(null);
 
@@ -120,26 +116,8 @@ public class MainMenu extends JFrame implements ActionListener {
         background.setBounds(0, 0, 900, 900);
     }
 
-    public boolean isFlagTwoPlayersButton() {
-        return flagTwoPlayersButton;
-    }
-
-    public void setFlagTwoPlayersButton(boolean flagTwoPlayersButton) {
-        this.flagTwoPlayersButton = flagTwoPlayersButton;
-        this.flagOnePlayerButton1 = flagTwoPlayersButton;
-    }
-//    SingleM1EasyCarListener m1 = new SingleM1EasyCarListener();
-
-    public boolean isFlagOnePlayerButton() {
-        return flagOnePlayerButton;
-    }
-
-    public void setFlagOnePlayerButton(boolean flagOnePlayerButton) {
-        this.flagOnePlayerButton = flagOnePlayerButton;
-    }
 
     private void onePlayerAction(ActionEvent e) {
-        setFlagOnePlayerButton(true);
         Levels levels= new Levels();
         levels.flagOnePlayerButton = true;
         setVisible(false);
@@ -154,11 +132,8 @@ public class MainMenu extends JFrame implements ActionListener {
     }
 
     private void twoPlayersAction(ActionEvent e) {
-        flagTwoPlayersButton = true;
-        //race r = new race(true
         setVisible(false);
         new TwoPlayerSelected().setVisible(true);
-        flagTwoPlayersButton = true;
     }
 
     private void howToPlayAction(ActionEvent e) {
