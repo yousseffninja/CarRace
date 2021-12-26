@@ -43,7 +43,7 @@ public class SEM1 extends JFrame implements KeyListener {
     }
     public void handleKeyPress(KeyEvent e) {
 
-        if (e.getKeyCode() == KeyEvent.VK_P) {
+        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
             animator.stop();
         }
     }
@@ -55,7 +55,9 @@ public class SEM1 extends JFrame implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent keyEvent) {
-
+//        if(keyEvent.getKeyCode() == KeyEvent.VK_ESCAPE){
+//            animator.stop();
+//        }
     }
 
     @Override
