@@ -145,7 +145,7 @@ public class MainMenu extends JFrame implements ActionListener {
         setVisible(false);
 //        new Test1();
         //new SingleM1EasyCarListener().setVisible(true);
-        new Maps().setVisible(true);
+        new OnePlayerSelected().setVisible(true);
 
     }
 
@@ -157,7 +157,7 @@ public class MainMenu extends JFrame implements ActionListener {
         flagTwoPlayersButton = true;
         //race r = new race(true
         setVisible(false);
-        new Maps().setVisible(true);
+        new TwoPlayerSelected().setVisible(true);
         flagTwoPlayersButton = true;
     }
 

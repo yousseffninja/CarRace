@@ -11,7 +11,7 @@ import java.awt.event.*;
 import javax.media.opengl.*;
 import javax.swing.*;
 
-public class Maps extends JFrame {
+public class TwoPlayerSelected extends JFrame {
 
     public JButton mapOne;
     public JButton mapTwo;
@@ -30,10 +30,10 @@ public class Maps extends JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        new Maps();
+        new TwoPlayerSelected();
     }
 
-    public Maps() {
+    public TwoPlayerSelected() {
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         initComponents();
         setSize(900, 900);
@@ -99,20 +99,20 @@ public class Maps extends JFrame {
     private void mapOneAction(ActionEvent evt) {
         flagMapOneButton = true;
         setVisible(false);
-        new Levels().setVisible(true);
+        new TwoPlayerMap1().setVisible(true);
         flagMapOneButton = true;
     }
 
     private void mapTwoAction(ActionEvent evt) {
         flagMapTwoButton = true;
         setVisible(false);
-        new Levels().setVisible(true);
+        new TwoPlayerMap2().setVisible(true);
     }
 
     private void mapThreeAction(ActionEvent evt) {
         flagMapThreeButton = true;
         setVisible(false);
-        new Levels().setVisible(true);
+        new TwoPlayerMap3().setVisible(true);
     }
 
     private void backAction(ActionEvent evt) {

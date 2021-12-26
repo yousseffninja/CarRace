@@ -132,10 +132,10 @@ public class MultiM3HardCarListener extends AnimListener {
         DrawLine(gl, x1-170 , y3, 1, 0.3f);
         DrawLine(gl, x1-170 , y4, 1, 0.3f);
 
-        yEnemy1 -= 5;
-        yEnemy2 -= 5;
-        yEnemy3 -= 5;
-        yEnemy4 -= 5;
+        yEnemy1 -= 15;
+        yEnemy2 -= 15;
+        yEnemy3 -= 15;
+        yEnemy4 -= 15;
 
         DrawEnemy(gl, Xgenerate1, yEnemy1, 3, 0.4f);
         DrawEnemy(gl, Xgenerate2, yEnemy2, 3, 0.4f);
