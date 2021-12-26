@@ -87,7 +87,7 @@ public class OnePlayerSelected extends JFrame {
         back.setBounds(20, 650, 65, 29);
 
         background.setHorizontalAlignment(SwingConstants.CENTER);
-        //background.setIcon(new javax.swing.ImageIcon(getClass().getResource("/project/pngtree-vector-car-race-png-image_3170136.jpg"))); // NOI18N
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("BackGround.jpeg")));
         background.setText("background");
         jPanel1.add(background);
         background.setBounds(0, 0, 900, 900);

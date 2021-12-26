@@ -107,7 +107,7 @@ public class MainMenu extends JFrame implements ActionListener {
         exit.setBounds(320, 620, 254, 41);
 
         gameName.setFont(new Font("Yu Gothic UI Semilight", 3, 48));
-        gameName.setForeground(new Color(0, 0, 0));
+        gameName.setForeground(new Color(255, 255, 255));
         gameName.setHorizontalAlignment(SwingConstants.CENTER);
         gameName.setText("Car Race");
         jPanel1.add(gameName);
@@ -115,9 +115,9 @@ public class MainMenu extends JFrame implements ActionListener {
 
         getContentPane().add(jPanel1);
         background.setHorizontalAlignment(SwingConstants.CENTER);
-        background.setIcon(new ImageIcon(getClass().getResource("pngtree-vector-car-race-png-image_3170136.jpg")));
+        background.setIcon(new ImageIcon(getClass().getResource("BackGround.jpeg")));
         jPanel1.add(background);
-        background.setBounds(-70, 0, 900, 900);
+        background.setBounds(0, 0, 900, 900);
     }
 
     public boolean isFlagTwoPlayersButton() {

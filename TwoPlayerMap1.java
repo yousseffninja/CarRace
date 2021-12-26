@@ -102,7 +102,7 @@ public class TwoPlayerMap1 extends JFrame implements ActionListener {
         jPanel1.add(back);
         back.setBounds(30, 623, 80, 30);
 
-        //jLabel2.setIcon(new ImageIcon(getClass().getResource("/project/pngtree-vector-car-race-png-image_3170136.jpg")));
+        background.setIcon(new javax.swing.ImageIcon(getClass().getResource("BackGround.jpeg")));
         jLabel2.setText("Put background here");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(0, 0, 900, 900);
