@@ -16,10 +16,6 @@ public class SingleM1EasyCarListener extends AnimListener {
 
     int maxWidth = 900;
     int maxHeight = 900;
-    private static final int X_MIN = 0;
-    private static final int X_MAX = 900;
-
-
 
     int x = maxWidth/2, y = 100;
     int yEnemy1 = 900;
@@ -37,10 +33,6 @@ public class SingleM1EasyCarListener extends AnimListener {
     private int Xgenerate2 = -generateX(0);
     private int Xgenerate3 = -generateX(0);
     private int Xgenerate4 = -generateX(0);
-
-    boolean flag = true;
-//
-
 
     private static final int DI = 10;
     private static final int DJ = 10;
@@ -113,33 +105,19 @@ public class SingleM1EasyCarListener extends AnimListener {
         if(yEnemy1 < -60){
             yEnemy1 = maxHeight;
             Xgenerate1 = generateX(0);
-//            while(Xgenerate2 >= Xgenerate1 - 20 && Xgenerate2 <= Xgenerate1 + 20)
-//                Xgenerate2 = generateX(0);
         }
         if(yEnemy2 < -60){
             yEnemy2 = maxHeight;
             Xgenerate2 = generateX(0);
-//            while(Xgenerate4 >= Xgenerate3 - 20 && Xgenerate4 <= Xgenerate3 + 20)
-//                Xgenerate2 = generateX(0);
         }
         if(yEnemy3 < -60){
             yEnemy3 = maxHeight;
             Xgenerate3 = generateX(0);
-//            while(Xgenerate4 >= Xgenerate3 - 20 && Xgenerate4 <= Xgenerate3 + 20)
-//                Xgenerate2 = generateX(0);
         }
         if(yEnemy4 < -60){
             yEnemy4 = maxHeight;
             Xgenerate4 = generateX(0);
-//            while(Xgenerate4 >= Xgenerate3 - 20 && Xgenerate4 <= Xgenerate3 + 20)
-//                Xgenerate2 = generateX(0);
         }
-
-
-
-
-
-
 
         DrawLine(gl, x1 - 20, y1, 1, 0.4f);
         DrawLine(gl, x2 - 20, y1, 1, 0.4f);
@@ -147,7 +125,6 @@ public class SingleM1EasyCarListener extends AnimListener {
         DrawLine(gl, x2 - 20, y3, 1, 0.4f);
         DrawLine(gl, x1 - 20, y4, 1, 0.4f);
         DrawLine(gl, x2 - 20, y4, 1, 0.4f);
-
 
         yEnemy1 -= 5;
         yEnemy2 -= 5;
@@ -165,7 +142,6 @@ public class SingleM1EasyCarListener extends AnimListener {
         DrawEnemy(gl, Xgenerate4, yEnemy4, 2, 0.4f);
 
         DrawMainCar(gl, x, y, 0, 1.1f);
-
 
     }
 
@@ -278,10 +254,6 @@ public class SingleM1EasyCarListener extends AnimListener {
             double end = java.time.LocalTime.now().getSecond();
             JOptionPane.showMessageDialog(null, "GameOver.\nScore: " + (end - now), "GameOver",
                     JOptionPane.WARNING_MESSAGE);
-//            MainMenu m = new MainMenu();
-//            SEM1 s1 = new SEM1();
-//            s1.setVisible(false);
-//            m.setVisible(true);
             System.exit(0);
         }
     }

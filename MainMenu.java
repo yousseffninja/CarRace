@@ -48,10 +48,10 @@ public class MainMenu extends JFrame implements ActionListener {
             Clip clip = AudioSystem.getClip();
             clip.open(audioInputStream);
             clip.start();
-            } catch(Exception ex) {
+        } catch(Exception ex) {
             System.out.println("Error with playing sound.");
             ex.printStackTrace();
-            }
+        }
 
         setVisible(true);
         setLocationRelativeTo(null);
@@ -118,8 +118,6 @@ public class MainMenu extends JFrame implements ActionListener {
 
 
     private void onePlayerAction(ActionEvent e) {
-        Levels levels= new Levels();
-        levels.flagOnePlayerButton = true;
         setVisible(false);
 //        new Test1();
         //new SingleM1EasyCarListener().setVisible(true);

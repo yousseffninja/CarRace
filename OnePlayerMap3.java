@@ -113,34 +113,20 @@ public class OnePlayerMap3 extends JFrame implements ActionListener {
     }
 
     private void easyActionPerformed(ActionEvent evt) {
-        flagEasyButton = true;
-        //Add the easy game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
-        System.out.println(flagOnePlayerButton);
+
         new SEM3();
 
     }
 
     private void mediumActionPerformed(ActionEvent evt) {
-        //easy.isEnabled();
-        flagMediumButton = true;
-        //Add the medium game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
+
         new SMM3();
 
 
     }
 
     private void hardActionPerformed(ActionEvent evt) {
-        flagHardButton = true;
-        //Add the hard game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
+
         new SHM3();
     }
 

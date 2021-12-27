@@ -102,11 +102,11 @@ public class TwoPlayerMap1 extends JFrame implements ActionListener {
         jPanel1.add(back);
         back.setBounds(30, 623, 80, 30);
 
-        getContentPane().add(jPanel1);
-        background.setHorizontalAlignment(SwingConstants.CENTER);
-        background.setIcon(new ImageIcon(getClass().getResource("BackGround.jpeg")));
-        jPanel1.add(background);
-        background.setBounds(0, 0, 900, 900);
+//        getContentPane().add(jPanel1);
+//        background.setHorizontalAlignment(SwingConstants.CENTER);
+//        background.setIcon(new ImageIcon(getClass().getResource("BackGround.jpeg")));
+//        jPanel1.add(background);
+//        background.setBounds(0, 0, 900, 900);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 900, 900);
@@ -114,34 +114,20 @@ public class TwoPlayerMap1 extends JFrame implements ActionListener {
     }
 
     private void easyActionPerformed(ActionEvent evt) {
-        flagEasyButton = true;
-        //Add the easy game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
-        System.out.println(flagOnePlayerButton);
+
         new MEM1();
 
     }
 
     private void mediumActionPerformed(ActionEvent evt) {
-        //easy.isEnabled();
-        flagMediumButton = true;
-        //Add the medium game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
+
         new MMM1();
 
 
     }
 
     private void hardActionPerformed(ActionEvent evt) {
-        flagHardButton = true;
-        //Add the hard game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
+
         new MHM1();
     }
 

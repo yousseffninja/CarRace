@@ -113,23 +113,11 @@ public class OnePlayerMap2 extends JFrame implements ActionListener {
     }
 
     private void easyActionPerformed(ActionEvent evt) {
-        flagEasyButton = true;
-        //Add the easy game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
-        System.out.println(flagOnePlayerButton);
         new SEM2();
 
     }
 
     private void mediumActionPerformed(ActionEvent evt) {
-        //easy.isEnabled();
-        flagMediumButton = true;
-        //Add the medium game here
-        MainMenu menu = new MainMenu();
-        Maps maps = new Maps();
-        Levels levels = new Levels();
         new SMM2();
 
 

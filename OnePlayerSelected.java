@@ -97,10 +97,8 @@ public class OnePlayerSelected extends JFrame {
     }
 
     private void mapOneAction(ActionEvent evt) {
-        flagMapOneButton = true;
         setVisible(false);
         new OnePlayerMap1().setVisible(true);
-        flagMapOneButton = true;
     }
 
     private void mapTwoAction(ActionEvent evt) {

@@ -25,7 +25,7 @@ public class MEM1 extends JFrame implements KeyListener{
     }
     
     public MEM1(){
-        MultiM3EasyCarListener listener = new MultiM3EasyCarListener();
+        MultiM1EasyCarListener listener = new MultiM1EasyCarListener();
         glcanvas = new GLCanvas();
         glcanvas.addGLEventListener(listener);
         glcanvas.addKeyListener(listener);
