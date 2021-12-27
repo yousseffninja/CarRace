@@ -17,6 +17,9 @@ public class MultiM2MediumCarListener extends AnimListener {
     int maxWidth = 900;
     int maxHeight = 900;
 
+    int speed = 10;
+    int levelup = 1;
+
     int yEnemy1 = 900;
     int yEnemy2 = 650;
     int yEnemy3 = 900;
@@ -134,10 +137,15 @@ public class MultiM2MediumCarListener extends AnimListener {
         DrawLine(gl, x1-60 , y3, 1, 0.3f);
         DrawLine(gl, x1-60 , y4, 1, 0.3f);
 
-        yEnemy1 -= 10;
-        yEnemy2 -= 10;
-        yEnemy3 -= 10;
-        yEnemy4 -= 10;
+        levelup++;
+
+        if(levelup % 103 == 0)
+            speed++;
+
+        yEnemy1 -= speed;
+        yEnemy2 -= speed;
+        yEnemy3 -= speed;
+        yEnemy4 -= speed;
 
         DrawEnemy(gl, Xgenerate1, yEnemy1, 3, 0.4f);
         DrawEnemy(gl, Xgenerate2, yEnemy2, 3, 0.4f);

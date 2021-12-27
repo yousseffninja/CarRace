@@ -23,6 +23,9 @@ public class SingleM1EasyCarListener extends AnimListener {
     int yEnemy3 = 500;
     int yEnemy4 = 350;
 
+    int speed = 5;
+    int levelup = 1;
+
     int x1 = maxWidth/3, y1 = maxHeight/3;
     int x2 = 2*maxWidth/3, y2 = maxHeight/2;
     int y3 = 2*maxHeight/3, y4 = maxHeight;
@@ -126,10 +129,15 @@ public class SingleM1EasyCarListener extends AnimListener {
         DrawLine(gl, x1 - 20, y4, 1, 0.4f);
         DrawLine(gl, x2 - 20, y4, 1, 0.4f);
 
-        yEnemy1 -= 5;
-        yEnemy2 -= 5;
-        yEnemy3 -= 5;
-        yEnemy4 -= 5;
+        levelup++;
+
+        if(levelup % 103 == 0)
+            speed++;
+
+        yEnemy1 -= speed;
+        yEnemy2 -= speed;
+        yEnemy3 -= speed;
+        yEnemy4 -= speed;
 
         GameOver(x, y ,Xgenerate1, yEnemy1, now);
         GameOver(x, y ,Xgenerate2, yEnemy2, now);

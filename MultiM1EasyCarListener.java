@@ -23,6 +23,9 @@ public class MultiM1EasyCarListener extends AnimListener {
     int yEnemy3 = 900;
     int yEnemy4 = 650;
 
+    int speed = 5;
+    int levelup = 1;
+
     private double now = java.time.LocalTime.now().getSecond();
 
     private int Xgenerate1 = -300;
@@ -135,10 +138,15 @@ public class MultiM1EasyCarListener extends AnimListener {
         DrawLine(gl, x1-60 , y3, 1, 0.3f);
         DrawLine(gl, x1-60 , y4, 1, 0.3f);
 
-        yEnemy1 -= 5;
-        yEnemy2 -= 5;
-        yEnemy3 -= 5;
-        yEnemy4 -= 5;
+        levelup++;
+
+        if(levelup % 103 == 0)
+            speed++;
+
+        yEnemy1 -= speed;
+        yEnemy2 -= speed;
+        yEnemy3 -= speed;
+        yEnemy4 -= speed;
 
         DrawEnemy(gl, Xgenerate1, yEnemy1, 3, 0.4f);
         DrawEnemy(gl, Xgenerate2, yEnemy2, 3, 0.4f);

@@ -25,6 +25,10 @@ public class SingleM3MediamCarListener extends AnimListener {
     int yEnemy2 = 650;
     int yEnemy3 = 500;
     int yEnemy4 = 350;
+
+    int speed = 10;
+    int levelup = 1;
+
     int x1 = maxWidth/3, y1 = maxHeight/3;
     int x2 = 2*maxWidth/3, y2 = maxHeight/2;
     int y3 = 2*maxHeight/3, y4 = maxHeight;
@@ -149,10 +153,15 @@ public class SingleM3MediamCarListener extends AnimListener {
         DrawLine(gl, x2 - 100, y4, 1, 0.3f);
 
 //
-        yEnemy1 -= 10;
-        yEnemy2 -= 10;
-        yEnemy3 -= 10;
-        yEnemy4 -= 10;
+        levelup++;
+
+        if(levelup % 103 == 0)
+            speed++;
+
+        yEnemy1 -= speed;
+        yEnemy2 -= speed;
+        yEnemy3 -= speed;
+        yEnemy4 -= speed;
 
         GameOver(x, y ,Xgenerate1, yEnemy1, now);
         GameOver(x, y ,Xgenerate2, yEnemy2, now);
