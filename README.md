@@ -1,5 +1,5 @@
 # CarRace
-Video directory: https://github.com/yousseffninja/CarRace/tree/main/Video
+Video directory: https://github.com/yousseffninja/CarRace/tree/main/Video \n
 run MainMenu.java to play ;)
 
 --------------------------
