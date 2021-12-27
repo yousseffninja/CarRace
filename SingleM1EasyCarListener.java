@@ -262,7 +262,7 @@ public class SingleM1EasyCarListener extends AnimListener {
         x = 90 + (int)(Math.random() * 650);
         return x;
     }
-
+//
     /*
      * KeyListener
      */
